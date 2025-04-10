@@ -1,0 +1,148 @@
+/* Updated Movie Detail Page Styling */
+
+body {
+  background-color: #1e1e2f; /* Deep navy background for better readability */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.detail-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+  width: 100%;
+}
+
+.detail-items {
+  width: 95%;
+  max-width: 1200px;
+  background-color: #2a2b3c; /* Slightly lighter card */
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.poster {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.poster:hover {
+  transform: scale(1.03);
+}
+
+.title-trailer {
+  padding: 10px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.table {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #34344a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+tr:nth-child(odd) {
+  background-color: #3c3e55;
+}
+
+th, td {
+  padding: 12px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  background-color: #444659;
+}
+
+.trailer {
+  background-color: #ff4c60;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.trailer:hover {
+  background-color: #e13b50;
+}
+
+.desc {
+  color: #d1d1d1;
+  text-align: justify;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #ccc;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+/* Responsive Design */
+@media only screen and (min-width: 768px) {
+  .header-data {
+    flex-direction: row;
+  }
+
+  .poster {
+    width: 220px;
+    height: 340px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .table {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .desc {
+    padding: 0 60px;
+    font-size: 18px;
+  }
+}

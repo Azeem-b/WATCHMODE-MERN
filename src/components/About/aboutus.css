@@ -1,0 +1,14 @@
+.about-container {
+    padding: 20px;
+    margin-top: 70px;
+    color: white; /* This will apply to all text inside, including <p> */
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #1e293b; /* Optional: dark background for better contrast */
+  }
+  
+  .about-container p {
+    color: white; /* Explicitly apply white to paragraph tags */
+    margin-bottom: 1rem;
+  }
+  
